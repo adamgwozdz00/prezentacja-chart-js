@@ -1,7 +1,7 @@
 import {data1, data2, data3} from "./data";
 import {options} from "./options";
 
-const chartType = ['pie','line','bar']
+const chartType = ['pie','line','bar','scatter','polarArea','bubble','doughnut','radar']
 
 export const config1 = {
   type: 'pie',
