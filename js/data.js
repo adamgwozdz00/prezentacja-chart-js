@@ -1,4 +1,4 @@
-//
+// Primitive
 export const data1 = {
   labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
   datasets: [{
@@ -6,7 +6,7 @@ export const data1 = {
     label: '# of Votes',
   }],
 }
-
+// Object
 export const data2 = {
   datasets: [
     {
@@ -30,7 +30,7 @@ export const data2 = {
           x: 'Orange', y: 3
         }
       ],
-      label: '# of Votes',
+      label: '% of Votes',
       color: '#FF0000',
       background: 'rgba(255, 0, 0,1)',
       borderColor: 'rgba(255, 0, 0,1)'
@@ -67,7 +67,6 @@ export const data3 = {
 //   '#00FF00'
 // ]
 //
-// thirdExampleData.datasets.forEach((dataset, i) => {
-//   console.log(dataset, i)
+// data3.datasets.forEach((dataset, i) => {
 //   dataset.backgroundColor = colors[i]
 // })
