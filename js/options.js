@@ -8,11 +8,11 @@ export const options = {
           size: 14,
           weight: 200, // normal | bold | lighter | bolder | number,
           family: 'sans-serif' //"'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'"
-        }
+        },
       }
     },
     tooltip: {
-      enabled: true
+      enabled: true,
     },
     title: {
       display: true,
@@ -26,10 +26,41 @@ export const options = {
   },
   scales: {
     y: {
-      beginAtZero: true
+      beginAtZero: true,
+      grid: {
+        display: true
+      },
+      ticks: {
+        callback: (value, index, ticks) => value + "%",
+        font: {
+          size: 16
+        }
+      },
+      title: {
+        display: true,
+        text: 'Percent of votes (%)',
+        font: {
+          size: 16
+        }
+      }
     },
     x: {
-      beginAtZero: true
-    }
+      beginAtZero: true,
+      grid: {
+        display: true
+      },
+      ticks: {
+        font: {
+          size: 16
+        }
+      },
+      title: {
+        display: true,
+        text: 'Colors',
+        font: {
+          size: 16
+        }
+      }
+    },
   },
 };
